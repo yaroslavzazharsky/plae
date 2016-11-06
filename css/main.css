@@ -372,7 +372,7 @@ img {
   border-style: none;
   cursor: pointer;
   text-indent: -10000rem;
-  background-image: url(../../img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
   z-index: 50;
   background-color: transparent; }

@@ -27,9 +27,6 @@ $(document).ready(function(){
         dots: false,
         focusOnSelect: false,
         arrows: true,
-        draggable: true,
-        
-        
     })
 
 });

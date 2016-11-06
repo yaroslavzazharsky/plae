@@ -1,0 +1,59 @@
+.about{
+    height: auto;
+    .info{
+        padding: $spacing*3 $spacing 0;
+        h2{
+            text-align: center;
+            font: 300 3rem/1.5 $fontTitle;
+            margin: 0 0 $spacing*1.5;
+            @media all and (min-width: $break-large){
+                margin: 0 0 $spacing*4.5;
+                
+            }
+        }
+        p{
+            text-align: left;
+            font: 100 1.6rem/1.5 $fontPrimary;
+            margin: 0 0 $spacing*3.5;
+            &:last-child{
+                margin: 0;
+            }
+            @media all and (min-width: $break-huge){
+                font: 300 2rem/1.5 $fontPrimary;
+            }
+            
+        }
+        @media all and (min-width: $break-medium){
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            width: 50%;
+            padding: 0 $spacing*5;
+            
+    }
+    
+    }
+    .image{
+        @media all and (min-width: $break-medium){
+            width: 50%;
+                img{
+                    height: 100vh;
+        }
+    }     
+}
+    @media all and (min-width: $break-medium) {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;   
+}
+   
+    }
+.onepage-wrapper .about{
+    height: auto;
+    @media all and (min-width: $break-medium){
+         height: 100%;
+    }
+    
+    
+}
+    

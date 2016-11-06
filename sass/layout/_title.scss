@@ -1,0 +1,107 @@
+.title{
+    h1{
+        text-indent: -1000rem;
+        display: none;
+    }
+    background: url(../img/img1l.jpg) center/cover no-repeat;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    .titl{
+        text-align: center;
+        font: 300 4rem/1.5 $fontTitle;
+        z-index: 5;
+        margin: 0 0 4.5rem;
+        @media all and (min-width: $break-medium) {
+		    font: 300 6rem/1.5 $fontTitle; 
+    }
+    }
+    .discript{
+        font: 300 2rem/1.5 $fontPrimary;
+        text-align: center;
+        z-index: 5;
+        margin: 0 0 $spacing*6;
+        padding: $spacing;
+        @media all and (min-width: $break-small) {
+		    width: 60%;
+            margin: 0 auto $spacing*6;
+	}
+    }
+    form{
+        text-align: center;
+        line-height: 0;
+        font-size: 0;
+         z-index: 5;
+        input{
+            margin: 0;
+            padding: 0;
+            border: none;
+            padding: 0 $spacing;
+            font: 300 1.8rem/48px $fontPrimary; 
+            color: #9e9e9e;
+            border-radius: 20px 0 0 20px;
+            @media all and (min-width: $break-medium) {
+                padding: 0 3rem;
+	    }
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            margin: 0;
+            padding: 0;
+            border: none;
+            padding: 0 1rem;
+            font: 700 1.8rem/48px $fontPrimary; 
+            color: #fff;
+            border-radius: 0  20px 20px 0;
+            background: $colorBtn;
+            @media all and (min-width: $break-medium) {
+                padding: 0 $spacing*4;
+            
+	    }
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                background: $colorBtn/2;
+                }
+        }
+    }
+    .header{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 33px 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    .logo{
+        display: block;
+        background: url(../img/logo.png) center no-repeat;
+        width:142px;
+        height: 57px;
+        float: left
+    }
+    &::after{
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
+    &::after{
+        display: block;
+        content: '';
+        background: rgba(0,0,0,.2);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        
+            
+    }
+}

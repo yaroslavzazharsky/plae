@@ -1,0 +1,106 @@
+.slider{
+    h2{
+        font: 300 3rem/1.5 $fontTitle;
+        margin: $spacing*3 0 $spacing*3;
+        text-align: center;
+        @media all and (min-width: $break-medium){
+            margin: $spacing*5 0 $spacing*3;
+            
+        }
+    }
+    .subTitle{
+        font: 100 1.8rem/1.5 $fontPrimary;
+        margin: 0 0 $spacing*5;
+        text-align: center;
+        @media all and (min-width: $break-large){
+            margin: 0 0 $spacing*10;
+            
+        }
+        
+    }
+    .content{
+        max-width: 465px;
+        margin: 0 auto;
+        position: relative;
+        
+        
+    }
+    .itemSlide{
+        position: relative;
+    }
+    .number{
+        position: absolute;
+        bottom: -8rem;
+        color: #000;
+        left:50%;
+        z-index: 5;
+        @media all and (min-width: $break-huge){
+            bottom: -10rem;
+        }
+        p{
+            text-align: center;
+            &:first-child{
+                font: 300 2.4rem/1.5 $fontTitle;
+                margin: 0 0 $spacing;
+                @media all and (min-width: $break-large){
+                    margin: 0 0 $spacing*1.5;
+                    
+                }
+            }
+            &:last-child{
+                font: 100 1.8rem/1.5 $fontPrimary;
+            }
+        }
+       
+    }
+    .slick-list{
+        padding: 0 0 8rem;
+    }
+    .slick-prev.slick-arrow, .slick-next.slick-arrow{
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top:calc(70% - 19px);
+    border-width: 0px;
+    border-style: none;
+    cursor: pointer;
+    text-indent: -10000rem;
+    background-image: url(../../img/sprite.png);
+    background-repeat: no-repeat;
+    z-index: 50;
+    background-color: transparent;
+        @media all and (min-width: $break-medium){
+            top:calc(50% - 19px);  
+        }
+  }
+    .slick-prev.slick-arrow{
+        background-position: -5px -5px;
+        left:1rem;
+        @media all and (min-width: $break-medium){
+            left:-5rem;
+        }
+        @media all and (min-width: $break-large){
+            left:-20rem;
+        }
+        &:focus{
+            outline: none;
+        }
+        
+    }
+    .slick-next.slick-arrow{
+        background-position: -53px -5px;
+        right:1rem;
+        @media all and (min-width: $break-medium){
+             right:-5rem;
+            
+        }
+        @media all and (min-width: $break-large){
+            right:-20rem;
+        }
+         &:focus{
+            outline: none;
+        }
+        
+    }
+    
+}

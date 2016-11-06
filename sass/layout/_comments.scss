@@ -1,0 +1,102 @@
+.comments{
+    display: flex;
+    flex-flow: column nowrap;
+    .autor{
+        @media all and (min-width: $break-medium){
+            width: 50%;
+            height: 100vh;
+        }
+        img{
+            height: auto;
+            @media all and (min-width: $break-medium){
+                height: 100vh;
+            }
+        }
+    }
+    .autor.ord{
+        order: 2;
+        margin: 0 0 $spacing;
+        @media all and (min-width: $break-medium){
+            order: 1;
+            margin: 0;
+        }
+        
+    }
+    .comment{
+        padding: 0 $spacing;
+        font: 100 2rem/1.5 $fontPrimary;
+        text-align: center;
+        @media all and (min-width: $break-medium){
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            width: 50%;
+            height: 100vh;
+        }
+        h2{
+            font: 300 2rem/1.5 $fontTitle;
+            text-align: center;
+            margin: $spacing 0 $spacing*6.5;
+            @media all and (min-width: $break-medium){
+                font: 300 3rem/1.5 $fontTitle;
+                margin: $spacing 0 $spacing*13;   
+            }
+         
+        }
+        p{
+            
+            &:last-child{
+                margin: 0 auto 0;
+            }
+            
+                
+            }
+        blockquote{
+            margin: 0 0 $spacing*5;
+                @media all and (min-width: $break-large){
+                    width: 40%;
+                    margin: 0 auto $spacing*10.5;
+                }
+            &::before{
+                content: '"';
+                font-size: 40px;
+                line-height: 1.5;
+                color: #dcdcdc;
+                float: left;
+                position: relative;
+                top:-25px;
+            }
+            &::after{
+                content: '"';
+                font-size: 40px;
+                line-height: 1.5;
+                color: #dcdcdc;
+                float: right;
+                position: relative;
+                bottom: -25px;
+            }
+        }
+        
+    }
+    .comment.order{
+        order: 1;
+        @media all and (min-width: $break-medium){
+            order: 2;
+        }
+    }
+    
+    
+    @media all and (min-width: $break-medium){
+        flex-flow: row nowrap;
+        
+    }
+    
+}
+.onepage-wrapper .comments{
+    height: auto;
+    @media all and (min-width: $break-medium){
+         height: 100%;
+    }
+    
+    
+}

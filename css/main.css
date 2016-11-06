@@ -114,7 +114,8 @@ img {
       padding: 0 1rem;
       font: 300 1.8rem/48px "Yantramanav", sans-serif;
       color: #9e9e9e;
-      border-radius: 20px 0 0 20px; }
+      border-radius: 20px 0 0 20px;
+      height: 48px; }
       @media all and (min-width: 768px) {
         .title form input {
           padding: 0 3rem; } }
@@ -128,6 +129,7 @@ img {
       font: 700 1.8rem/48px "Yantramanav", sans-serif;
       color: #fff;
       border-radius: 0  20px 20px 0;
+      height: 48px;
       background: #20ab50; }
       @media all and (min-width: 768px) {
         .title form button {
@@ -442,6 +444,9 @@ img {
       margin: 0 0 1rem;
       border-radius: 10px;
       margin: 0 auto 1rem; }
+      @media all and (min-width: 1160px) {
+        .properties .wrap .center {
+          width: 650px; } }
     .properties .wrap .left li, .properties .wrap .right li {
       background: #fff;
       border-radius: 10px;
@@ -810,7 +815,8 @@ img {
       padding: 0 1rem;
       font: 300 1.8rem/48px "Yantramanav", sans-serif;
       color: #9e9e9e;
-      border-radius: 20px 0 0 20px; }
+      border-radius: 20px 0 0 20px;
+      height: 48px; }
       @media all and (min-width: 768px) {
         .footer form input {
           padding: 0 3rem; } }
@@ -824,7 +830,8 @@ img {
       font: 700 1.8rem/48px "Yantramanav", sans-serif;
       color: #fff;
       border-radius: 0  20px 20px 0;
-      background: #20ab50; }
+      background: #20ab50;
+      height: 48px; }
       @media all and (min-width: 768px) {
         .footer form button {
           padding: 0 4rem; } }

@@ -539,12 +539,12 @@ img {
 
 @media all and (min-width: 1160px) {
   .left li:nth-child(4) span {
-    width: 180px;
+    width: 250px;
     height: 1px;
     background: #fff;
     position: absolute;
     bottom: 50%;
-    right: -180px; } }
+    right: -250px; } }
 
 @media all and (min-width: 1160px) {
   .left li:nth-child(4) span::after {
@@ -607,7 +607,7 @@ img {
 @media all and (min-width: 1160px) {
   .right li:nth-child(2) span {
     width: 1px;
-    height: 72px;
+    height: 62px;
     background: #fff;
     position: absolute;
     bottom: -20px;
